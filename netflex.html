@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-inspired Homepage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url('https://liteapks.com/wp-content/uploads/2022/12/netflix-cover-e1673026955778.jpeg');
+        }
+
+        header {
+            background-color: #E50914;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 700px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .thumbnails {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .thumbnail {
+            width: 250px;
+            height: 350px;
+            background-color: #333;
+            /* background-image: url('thumbnail-image.jpg'); */
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: #111;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+
+        .cta-button {
+            background-color: #E50914;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #CA0813;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NetFlex</h1>
+    </header>
+    <div class="hero">
+        <h1>Unlimited Entertainment</h1>
+        <p>Discover exclusive movies and shows. Join now!</p>
+        <button class="cta-button">Get Started</button>
+    </div>
+    <div class="thumbnails">
+        <div class="thumbnail">
+            <img style="width: 250px; height: 350px;" src="https://i.pinimg.com/236x/06/c9/cb/06c9cb7ec20a2b16070cc1e5b72aed19.jpg">
+        </div>
+        <div class="thumbnail">
+            <img style="width: 250px; height: 350px;" src="https://wallpaperaccess.com/full/3640230.jpg">
+        </div>
+        <div class="thumbnail">
+            <img style="width: 250px; height: 350px;" src="https://i.pinimg.com/236x/e1/e8/39/e1e8393a1706bcac4779eaf9dd09d6f0.jpg">
+        </div>
+        <div class="thumbnail">
+            <img style="width: 250px; height: 350px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPNnUYv1KcK2mMa4ADwuLebmQlFCNnuyvl_Q&usqp=CAU">
+        </div>
+        <div class="thumbnail">
+            <img style="width: 250px; height: 350px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXYZCkWcmDJ-1ceEJWNe6_y0eHIPNeoXHDRQ&usqp=CAU">
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 MyFlix. All rights reserved.</p>
+    </div>
+</body>
+</html>
